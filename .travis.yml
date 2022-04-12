@@ -8,5 +8,6 @@ sudo: false
 # running in the container-based infrastructure without access to sudo
 install:
     - pip install pydeck pytest pandas
+    - git submodule update --init --recursive
 script:
     - pytest
